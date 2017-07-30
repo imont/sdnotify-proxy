@@ -6,3 +6,13 @@ of the service. systemd will thus not process sd_notify events from them.
 
 This utility will proxy events between Docker container and systemd. It is launched with name of proxy socket and a command
 to execute. It will then start listening on the proxy socket and execute the command.
+
+# Building
+
+```
+git clone [sdnotify-proxy-git-url]
+cd sdnotify-proxy
+sudo apt-get install golang-go
+./build
+
+```
